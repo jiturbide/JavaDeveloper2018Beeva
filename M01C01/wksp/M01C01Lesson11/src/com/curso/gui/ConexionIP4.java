@@ -10,7 +10,6 @@ package com.curso.gui;
    Subnet Mask : 255.255.255.0
    Gateway: 172.20.1.1
     
- * Curso Java
  * @author jose.iturbide
  */
 public class ConexionIP4 {

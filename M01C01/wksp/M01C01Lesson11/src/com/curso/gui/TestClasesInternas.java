@@ -1,9 +1,11 @@
 package com.curso.gui;
 
 /**
- * Curso Java
- * @author jose.iturbide
+ * 
+ * @author JLIL
  */
 public class TestClasesInternas {
-
+    public static void main(String[] args) {
+        
+    }
 }

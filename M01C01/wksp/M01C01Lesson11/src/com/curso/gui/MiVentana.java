@@ -1,5 +1,11 @@
 package com.curso.gui;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
+
 /**
  *
  * @author jose.iturbide
@@ -11,6 +17,28 @@ public class MiVentana extends javax.swing.JFrame {
      */
     public MiVentana() {
         initComponents();
+        //Forma 1
+        this.btnAceptar.addActionListener(   new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Ouch!");
+            } //fin metodo
+          } //fin clase anonima
+        );
+        //Forma 2
+        ActionListener al2 = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Ouch!");
+            } //fin metodo
+          }; //fin clase anonima
+        
+        this.btnAceptar.addActionListener(al2);
+        
+        
+        MouseMotionListener mml = new MiMouseMotionListener();
+        this.btnAceptar.addMouseMotionListener(mml);
+        
+        MouseListener ml = new MiMouseListener();
+        this.btnAceptar.addMouseListener(ml);
     }
 
     /**
@@ -126,4 +154,34 @@ public class MiVentana extends javax.swing.JFrame {
     private javax.swing.JLabel lblMsg;
     private javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables
+
+    private class MiMouseMotionListener implements MouseMotionListener {
+        public void mouseDragged(MouseEvent e) {
+        }
+        public void mouseMoved(MouseEvent e) {
+            System.out.println("Evento: " + e.getX() + ", " + e.getY() );
+        }
+    }
+
+    private class MiMouseListener implements MouseListener {
+    public void mouseClicked(MouseEvent e) {}
+
+    public void mousePressed(MouseEvent e) {
+        System.out.println("mousePressed()");
+    }
+
+    public void mouseReleased(MouseEvent e) {
+        System.out.println("mouseReleased()");
+    }
+
+    public void mouseEntered(MouseEvent e) {}
+
+    public void mouseExited(MouseEvent e) {}
+    }
+}
+
+class MiBotonListener implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+        System.out.println("Ouch!");
+    }
 }

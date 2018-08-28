@@ -56,7 +56,13 @@ public class TestSortList {
         Collections.sort(listaNumeros);
         System.out.println("lista numeros: " + listaNumeros);
         
+        //Operaciones
         
+        //listaNumeros.
+        
+        
+                
+                
     }
     
     public void procesar(List a) {}

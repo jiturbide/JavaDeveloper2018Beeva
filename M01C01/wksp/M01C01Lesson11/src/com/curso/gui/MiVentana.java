@@ -33,6 +33,9 @@ public class MiVentana extends javax.swing.JFrame {
         
         this.btnAceptar.addActionListener(al2);
         
+        //ActionListener al3 = (e) -> System.out.println("Ouch!");
+        
+        
         
         MouseMotionListener mml = new MiMouseMotionListener();
         this.btnAceptar.addMouseMotionListener(mml);

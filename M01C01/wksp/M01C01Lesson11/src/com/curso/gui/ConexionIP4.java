@@ -64,7 +64,7 @@ public class ConexionIP4 {
           cnx.setIp(TipoIpEnum.MASK, 255,255,255,0);
           cnx.setIp(TipoIpEnum.GATEWAY, 172,20,1,1);
         
-          Ip ip = cnx.getIp(); //Ip es inmutable, sin embargo tiene metodos set()
+          Ip ip = cnx.getIp(TipoIpEnum.IPV4); //Ip es inmutable, sin embargo tiene metodos set()
           System.out.println(ip);
           System.out.println(cnx);
           

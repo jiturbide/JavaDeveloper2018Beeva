@@ -68,8 +68,5 @@ public class ConexionIP4 {
           System.out.println(ip);
           System.out.println(cnx);
           
-        
-        
-        IP ip = new ConexionIP4.IP(172,168,1,12);
     }
 }

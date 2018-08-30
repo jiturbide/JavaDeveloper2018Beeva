@@ -1,14 +1,33 @@
 package com.curso.interfaces;
 
 /**
+ *
  * @author JLIL
  */
-@FunctionalInterface
 public interface IService {
-    public static final String VERSION = "v1.0.0";
-    default public void info() {
-        System.out.println("ISErvice " + VERSION);
-    }
-    void init(String tipo);
-    //void execute();
+    int VERSION = 2;  //public static final
+    //int MAX_VALUE; //Esto no se puede
+    
+    void init();  //public abstract
+    public abstract void destroy(); 
+    public void doService();  //abstract
 }
+
+interface IMailService extends IService{
+    void sendMail();
+}
+
+class ApacheMailService implements IMailService {
+    int VERSION;
+    
+    //void sendMail() {} //Cuidado!!
+    public void sendMail() {} //Cuidado!!
+
+    public void init() {}
+
+    public void destroy() {}
+
+    public void doService() {}
+    
+}
+

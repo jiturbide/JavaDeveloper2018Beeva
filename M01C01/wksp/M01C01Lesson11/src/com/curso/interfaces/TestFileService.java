@@ -5,7 +5,7 @@ package com.curso.interfaces;
  */
 public class TestFileService {
     public static void main(String[] args) {
-        IService service = new FileService();
+        IServiceOld service = new FileService();
         service.init("File");
         service.info();
         //IService.info();

@@ -1,9 +1,7 @@
 package com.curso.herencia.codificador;
 
-public abstract class Codificador {
+public abstract class CodificadorMethodFactory {
     public static final String VERSION = "v1.0";
-    private static final Codificador instance = new CodificadorSustitucionNumeros();  
-    
     public static void info() {
         System.out.println("Clase Base Codificador ");
     } 
@@ -14,6 +12,6 @@ public abstract class Codificador {
     
     //Patron Diseño Factory
     public static Codificador getInstance() {
-        return instance;
+        return new CodificadorSustitucionNumeros();
     }
 }

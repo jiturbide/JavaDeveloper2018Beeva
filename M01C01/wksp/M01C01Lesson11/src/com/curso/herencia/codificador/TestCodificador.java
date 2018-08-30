@@ -6,7 +6,8 @@ package com.curso.herencia.codificador;
  */
 public class TestCodificador {
     public static void main(String[] args) {
-        Codificador c = new CodificadorBase64();
+        //Codificador c = new CodificadorBase64();
+        Codificador c = Codificador.getInstance();
         MessageService ms = new MessageService(c);
 
         String original = "Hola Mundo !!!";

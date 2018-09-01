@@ -1,6 +1,6 @@
 package pruebas;
 
-import com.curso.interfaces.IService;
+import com.curso.interfaces.IServiceOld;
 
 /**
  * @author JLIL

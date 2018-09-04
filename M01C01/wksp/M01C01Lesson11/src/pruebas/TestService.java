@@ -2,7 +2,6 @@ package pruebas;
 
 import com.curso.herencia.MailService;
 import com.curso.herencia.Service;
-import com.curso.herencia.Message;
 
 /**
  * @author JLIL

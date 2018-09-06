@@ -4,7 +4,7 @@ public class Q04 {
     {
     byte x = 5;
     byte y = 10;
-    ____ z = x + y;
+     z = x + y;
     //A. int
     //B. long
     //C. boolean
@@ -15,6 +15,9 @@ public class Q04 {
 }
 
 /*
+Question 04.
+What data type (or types) will allow the following code snippet to compile?
+(Choose all that apply)
 byte x = 5;
 byte y = 10;
 _____ z = x + y;
@@ -24,5 +27,4 @@ C. boolean
 D. double
 E. short
 F. byte
-*/
 */

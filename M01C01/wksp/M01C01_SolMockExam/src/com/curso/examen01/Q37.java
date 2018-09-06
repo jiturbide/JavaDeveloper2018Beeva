@@ -58,5 +58,5 @@ B. AEBCD
 C. AEC
 D. AECD
 E. No output appears other than the stack trace.
-R: AEC
+R: C
 */

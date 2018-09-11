@@ -5,7 +5,7 @@ import java.util.Comparator;
 public class MesComparator implements Comparator{
 
     public int compare(Object o1, Object o2) {
-        int decision = 0;
+        int decision = -1;
         Mes m1 = (Mes) o1;
         Mes m2 = (Mes) o2;
         if(m1 == null || m2 == null) {return -1;}

@@ -22,9 +22,14 @@ public class TestMes {
         Collections.sort(meses, new MesComparator());
         System.out.println("4. meses: " + meses);
         
-        Comparator <Mes> comp = (x,y) -> { };
+        //Comparator <Mes> comp = (x,y) -> { };
         
-        Collections.sort(meses, comp);
+        
+        Collections.sort(meses, (x, y) ->  x.getDias() == y.getDias() ? 0
+                    : x.getDias() > y.getDias() ? 1
+                    :  -1);
+        
+        
         System.out.println("5. meses con Lamda: " + meses);
 
         /*

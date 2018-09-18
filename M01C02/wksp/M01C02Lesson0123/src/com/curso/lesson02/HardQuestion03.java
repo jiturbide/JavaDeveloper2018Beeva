@@ -13,7 +13,7 @@ class TestSwitch {
         final int par = 2;
         switch(this.value) {
             case par: break;
-            case 2: break;
+            //case 2: break;
             default:
                
         }

@@ -12,6 +12,8 @@ public class TopLevel {
         //protected String nombre;
     }  //private, protected, default, public
     public class IPv6 extends IP{
+        public int ii = 10;
+        
         public void baz() {
             System.out.println("salida:" + nombre);
         }
@@ -23,6 +25,11 @@ public class TopLevel {
         
         //clase local
         class Bar extends Base implements Serializable{
+            public void algo() {
+                System.out.println("i: " + iiiii + " nombre: "  + nombre);
+            }
+        }
+        class Bar2 extends Base implements Serializable{
             public void algo() {
                 System.out.println("i: " + iiiii + " nombre: "  + nombre);
             }
@@ -41,6 +48,13 @@ public class TopLevel {
         int par = 2;
         
         TopLevel r = new TopLevel() {
+            public void run(){
+                //par = 4;
+                System.out.println("dato:" + this.nombre + " par: " + par);
+            }
+        };
+        
+        TopLevel r2 = new TopLevel() {
             public void run(){
                 //par = 4;
                 System.out.println("dato:" + this.nombre + " par: " + par);

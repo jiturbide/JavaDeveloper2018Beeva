@@ -9,10 +9,10 @@ public class Outer {
 
         class Inner {
 
-            private int x = Outer.this.x;
+            private int x = this.x;
 
             public void printX() {
-                System.out.println(message + x);
+                System.out.println(message + this.x);
             }
         }
         Inner in = new Inner();

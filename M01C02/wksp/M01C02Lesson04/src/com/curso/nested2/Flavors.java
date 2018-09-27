@@ -3,6 +3,7 @@ package com.curso.nested2;
 /**
  * @author JLIL
  */
-public class Flavors {
-
+public enum Flavors {
+    VANILLA, CHOCOLATE, STRAWBERRY; 
+    private String color;
 }

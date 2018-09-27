@@ -2,7 +2,6 @@ package com.curso.lesson02;
 
 public class HardQuestion03 {
     public static void main(String[] args) {
-        
     }
 }
 
@@ -13,7 +12,7 @@ class TestSwitch {
         final int par = 2;
         switch(this.value) {
             case par: break;
-            //case 2: break;
+            case 4: break;
             default:
                
         }

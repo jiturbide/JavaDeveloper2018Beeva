@@ -1,4 +1,4 @@
-package com.curso.collections;
+package com.curso.extra.collections;
 
 import java.util.NavigableSet;
 import java.util.TreeSet;

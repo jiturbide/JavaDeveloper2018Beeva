@@ -17,6 +17,6 @@ public class TestLinkedList {
         /* */
         System.out.println("list: " + ll);
         
-        ll.
+        
     }
 }

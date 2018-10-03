@@ -17,8 +17,8 @@ public void audit(Sale t) { }
 }
 
 //Caso 02
-class Transaction<U> implements Auditable<U> {
-public void audit(U t) { }
+class Transaction<Sale> implements Auditable<Sale> {
+public void audit(Sale t) { }
 }
 
 //Caso 03

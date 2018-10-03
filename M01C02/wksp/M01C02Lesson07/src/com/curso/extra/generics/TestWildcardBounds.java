@@ -5,30 +5,32 @@ import java.util.List;
 
 public class TestWildcardBounds {
 
-    public static void printList(List<Object> list) {
-        for (Object x : list) {
-            System.out.println(x);
-        }
-    }
-
     public static void main(String[] args) {
         List<String> keywords = new ArrayList<>();
         keywords.add("java");
         printList(keywords); // DOES NOT COMPILE
 
         /* * /
-         List<Integer> numbers = new ArrayList<>(); numbers.add(new
-         Integer(42)); List<Object> objects = numbers; // DOES NOT COMPILE
-         objects.add("forty two"); System.out.println(numbers.get(1));
-         
+         List<Integer> numbers = new ArrayList<>(); 
+         numbers.add(new Integer(42)); 
+         List<Object> objects = numbers; // DOES NOT COMPILE
+         objects.add("forty two"); 
+         System.out.println(numbers.get(1));         
         /* */
         
-        /* */
+        /* * /
         //ArrayList<Number> list = new ArrayList<Integer>(); // DOES NOT COMPILE
         List<? extends Number> list = new ArrayList<Integer>();
         list.add(new Integer(1));
         /**/
     }
+    public static void printList(List<? extends String> list) {
+        //list.add("");
+        for (Object x : list) {
+            System.out.println(x);
+        }
+    }
+
 }
 
 

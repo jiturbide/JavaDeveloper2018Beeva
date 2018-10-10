@@ -8,7 +8,7 @@ public class TestGenericsInterfaces {
 }
 
 interface Auditable<T> {
-void audit(T t);
+  void audit(T t);
 }
 
 //Caso 01

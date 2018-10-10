@@ -4,9 +4,6 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Queue;
 
-/**
- * @author JLIL
- */
 public class TestDeque {
 
     public static void main(String[] args) {
@@ -28,13 +25,16 @@ public class TestDeque {
         deque.add(1);
         deque.addFirst(2);
         deque.addLast(3);
-        deque.offer(4);
+        
+        deque.offer(4);  //boolean 
         deque.offerFirst(5);
         deque.offerLast(6);
-        deque.push(7);
+        deque.push(7); //IllegalStateException en caso de no poder agregar
 
         deque.forEach(x -> System.out.print(x + ", "));
         System.out.println("\n ---------------------");
+        
+        // ------------------
         
         //Echar un vistazo
         System.out.println("deque.peek(): " + deque.peek());

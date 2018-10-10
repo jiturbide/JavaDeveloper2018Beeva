@@ -13,7 +13,7 @@ public class Cap03Q03 {
         list.add("one");
         list.add("two");
         list.add(7);
-        for (String s : list) {
+        for (/*String*/ Object s : list) {
             System.out.print(s);
         }
     }

@@ -8,6 +8,8 @@ public class Cap03Q20 {
         Map m = new HashMap();
         m.put(123, "456");
         m.put("abc", "def");
-        System.out.println(m.contains("123"));        
+        /* * /
+        System.out.println(m.contains("123"));
+        /* */        
     }
 }

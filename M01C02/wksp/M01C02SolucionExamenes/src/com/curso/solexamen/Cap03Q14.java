@@ -33,12 +33,12 @@ class Sorted implements Comparable<Sorted>, Comparator<Sorted> {
     }
 
     public int compareTo(Sorted s) {
-        //System.out.println("compareTo(Sorted s): " + text.compareTo(s.text));
+        System.out.println("compareTo(Sorted s): " + text.compareTo(s.text));
         return text.compareTo(s.text);
     }
 
     public int compare(Sorted s1, Sorted s2){
-        //System.out.println("compare(Sorted s1, Sorted s2) :" + (s1.num - s2.num));
+        System.out.println("compare(Sorted s1, Sorted s2) :" + (s1.num - s2.num));
         return s1. num - s2.num;
     }
     //88,a  
